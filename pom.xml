@@ -142,9 +142,9 @@
                             <inputSpec>${project.basedir}/src/main/resources/openapi-data.yaml</inputSpec>
                             <generatorName>spring</generatorName>
                             <output>${project.build.directory}/generated-sources/openapi</output>
-                            <apiPackage>ru.savka.data.api</apiPackage>
-                            <modelPackage>ru.savka.data.model</modelPackage>
-                            <basePackage>ru.savka.data</basePackage>
+                            <apiPackage>ru.savka.data_service.api</apiPackage>
+                            <modelPackage>ru.savka.data_service.model</modelPackage>
+                            <basePackage>ru.savka.data_service</basePackage>
                             <configOptions>
                                 <interfaceOnly>true</interfaceOnly>
                                 <useJakartaEe>true</useJakartaEe>
