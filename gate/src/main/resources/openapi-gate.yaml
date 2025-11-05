@@ -30,6 +30,28 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/StudentGateResponse'
+  /students/{id}:
+    get:
+      summary: Получить данные студента по ID
+      description: Запрашивает данные студента из сервиса DATA-SERVICE.
+      operationId: getStudentById
+      tags:
+        - studentGate
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID студента
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Успешный ответ с данными студента
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentGateResponse'
 
 components:
   schemas:
